@@ -1,0 +1,1803 @@
+{
+  "metadata": {
+    "title": "ODISSEI Knowledge Graph Schema",
+    "description": "RDF Schema extracted from the ODISSEI SPARQL endpoint",
+    "endpoint": "https://api.kg.odissei.nl/datasets/odissei/odissei-kg-acceptance/services/odissei-kg-acceptance-virtuoso/sparql",
+    "total_classes": 72,
+    "total_predicates": 100,
+    "domain_specific_classes": 9,
+    "domain_specific_predicates": 65
+  },
+  "namespaces": {
+    "odissei_namespaces": [
+      "https://portal.odissei.nl/schema/geospatial#",
+      "https://portal.odissei.nl/schema/dansMetadata#",
+      "https://portal.odissei.nl/schema/enrichments#",
+      "https://portal.odissei.nl/schema/provenance#",
+      "https://portal.odissei.nl/schema/questionInformation#",
+      "https://portal.odissei.nl/schema/socialscience#",
+      "https://portal.odissei.nl/schema/variableInformation#"
+    ],
+    "dataverse_namespaces": [
+      "https://dataverse.org/schema/citation/",
+      "https://dataverse.org/schema/core#"
+    ],
+    "all_namespaces": [
+      "http://purl.org/ontology/bibo/",
+      "https://w3id.org/nwo-research-fields#",
+      "https://schema.org/",
+      "http://rdf-vocabulary.ddialliance.org/discovery#",
+      "https://portal.odissei.nl/schema/socialscience#",
+      "http://purl.org/dc/dcmitype/",
+      "https://dataverse.org/schema/core#",
+      "https://portal.odissei.nl/schema/geospatial#",
+      "http://www.w3.org/2002/07/owl#",
+      "http://www.w3.org/2004/02/skos/core#",
+      "http://schema.org/",
+      "https://portal.odissei.nl/schema/dansMetadata#",
+      "http://xmlns.com/foaf/0.1/",
+      "https://dataverse.org/schema/citation/",
+      "https://w3id.org/software-types#",
+      "https://www.w3.org/TR/prov-o/#",
+      "http://purl.org/dc/terms/",
+      "http://www.w3.org/2000/01/rdf-schema#",
+      "https://portal.odissei.nl/schema/questionInformation#",
+      "https://portal.odissei.nl/schema/enrichments#",
+      "https://w3id.org/research-technology-readiness-levels#",
+      "http://www.openarchives.org/ore/terms/",
+      "https://portal.odissei.nl/schema/variableInformation#",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "https://portal.odissei.nl/schema/provenance#"
+    ]
+  },
+  "classes": {
+    "all": [
+      {
+        "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "local_name": "Property"
+      },
+      {
+        "uri": "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "local_name": "Resource"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+        "local_name": "DatatypeProperty"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#Class",
+        "local_name": "Class"
+      },
+      {
+        "uri": "http://www.w3.org/2000/01/rdf-schema#Class",
+        "local_name": "Class"
+      },
+      {
+        "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "local_name": "List"
+      },
+      {
+        "uri": "http://schema.org/SoftwareApplication",
+        "local_name": "SoftwareApplication"
+      },
+      {
+        "uri": "http://www.openarchives.org/ore/terms/ResourceMap",
+        "local_name": "ResourceMap"
+      },
+      {
+        "uri": "http://www.w3.org/2004/02/skos/core#Concept",
+        "local_name": "Concept"
+      },
+      {
+        "uri": "http://www.openarchives.org/ore/terms/Aggregation",
+        "local_name": "Aggregation"
+      },
+      {
+        "uri": "http://schema.org/Dataset",
+        "local_name": "Dataset"
+      },
+      {
+        "uri": "http://www.openarchives.org/ore/terms/AggregatedResource",
+        "local_name": "AggregatedResource"
+      },
+      {
+        "uri": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "local_name": "ConceptScheme"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#Ontology",
+        "local_name": "Ontology"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#AnnotationProperty",
+        "local_name": "AnnotationProperty"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#ObjectProperty",
+        "local_name": "ObjectProperty"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#SymmetricProperty",
+        "local_name": "SymmetricProperty"
+      },
+      {
+        "uri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+        "local_name": "Datatype"
+      },
+      {
+        "uri": "https://w3id.org/nwo-research-fields#ResearchField",
+        "local_name": "ResearchField"
+      },
+      {
+        "uri": "http://schema.org/ScholarlyArticle",
+        "local_name": "ScholarlyArticle"
+      },
+      {
+        "uri": "http://schema.org/TechArticle",
+        "local_name": "TechArticle"
+      },
+      {
+        "uri": "https://schema.org/SoftwareSourceCode",
+        "local_name": "SoftwareSourceCode"
+      },
+      {
+        "uri": "http://schema.org/SoftwareSourceCode",
+        "local_name": "SoftwareSourceCode"
+      },
+      {
+        "uri": "http://schema.org/WebApplication",
+        "local_name": "WebApplication"
+      },
+      {
+        "uri": "http://purl.org/dc/dcmitype/Software",
+        "local_name": "Software"
+      },
+      {
+        "uri": "http://purl.org/ontology/bibo/Article",
+        "local_name": "Article"
+      },
+      {
+        "uri": "https://schema.org/ResearchProject",
+        "local_name": "ResearchProject"
+      },
+      {
+        "uri": "http://purl.org/ontology/bibo/AcademicArticle",
+        "local_name": "AcademicArticle"
+      },
+      {
+        "uri": "http://purl.org/dc/dcmitype/Dataset",
+        "local_name": "Dataset"
+      },
+      {
+        "uri": "http://schema.org/CreativeWork",
+        "local_name": "CreativeWork"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#DataProperty",
+        "local_name": "DataProperty"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#NamedIndividual",
+        "local_name": "NamedIndividual"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#FunctionalProperty",
+        "local_name": "FunctionalProperty"
+      },
+      {
+        "uri": "https://w3id.org/research-technology-readiness-levels#TechnologyReadinessLevel",
+        "local_name": "TechnologyReadinessLevel"
+      },
+      {
+        "uri": "http://www.w3.org/2004/02/skos/core#OrderedCollection",
+        "local_name": "OrderedCollection"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#Thing",
+        "local_name": "Thing"
+      },
+      {
+        "uri": "http://xmlns.com/foaf/0.1/Person",
+        "local_name": "Person"
+      },
+      {
+        "uri": "http://purl.org/ontology/bibo/ThesisDegree",
+        "local_name": "ThesisDegree"
+      },
+      {
+        "uri": "http://purl.org/ontology/bibo/DocumentStatus",
+        "local_name": "DocumentStatus"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#Restriction",
+        "local_name": "Restriction"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#TransitiveProperty",
+        "local_name": "TransitiveProperty"
+      },
+      {
+        "uri": "http://schema.org/WebSite",
+        "local_name": "WebSite"
+      },
+      {
+        "uri": "http://schema.org/Organization",
+        "local_name": "Organization"
+      },
+      {
+        "uri": "http://schema.org/DataCatalog",
+        "local_name": "DataCatalog"
+      },
+      {
+        "uri": "http://schema.org/Person",
+        "local_name": "Person"
+      },
+      {
+        "uri": "http://schema.org/Grant",
+        "local_name": "Grant"
+      },
+      {
+        "uri": "http://schema.org/Audience",
+        "local_name": "Audience"
+      },
+      {
+        "uri": "https://w3id.org/software-types#CommandLineApplication",
+        "local_name": "CommandLineApplication"
+      },
+      {
+        "uri": "https://w3id.org/software-types#ServerApplication",
+        "local_name": "ServerApplication"
+      },
+      {
+        "uri": "https://w3id.org/software-types#SoftwareLibrary",
+        "local_name": "SoftwareLibrary"
+      },
+      {
+        "uri": "http://schema.org/TextDigitalDocument",
+        "local_name": "TextDigitalDocument"
+      },
+      {
+        "uri": "http://schema.org/Place",
+        "local_name": "Place"
+      },
+      {
+        "uri": "http://schema.org/DigitalDocument",
+        "local_name": "DigitalDocument"
+      },
+      {
+        "uri": "http://schema.org/DataDownload",
+        "local_name": "DataDownload"
+      },
+      {
+        "uri": "https://w3id.org/software-types#WebApplication",
+        "local_name": "WebApplication"
+      },
+      {
+        "uri": "http://schema.org/WebAPI",
+        "local_name": "WebAPI"
+      },
+      {
+        "uri": "http://schema.org/PostalAddress",
+        "local_name": "PostalAddress"
+      },
+      {
+        "uri": "http://schema.org/SpreadsheetDigitalDocument",
+        "local_name": "SpreadsheetDigitalDocument"
+      },
+      {
+        "uri": "https://w3id.org/software-types#SoftwareImage",
+        "local_name": "SoftwareImage"
+      },
+      {
+        "uri": "http://schema.org/PublicationIssue",
+        "local_name": "PublicationIssue"
+      },
+      {
+        "uri": "http://schema.org/AudioObject",
+        "local_name": "AudioObject"
+      },
+      {
+        "uri": "http://schema.org/WebService",
+        "local_name": "WebService"
+      },
+      {
+        "uri": "http://schema.org/ComputerLanguage",
+        "local_name": "ComputerLanguage"
+      },
+      {
+        "uri": "http://schema.org/PublicationVolume",
+        "local_name": "PublicationVolume"
+      },
+      {
+        "uri": "http://schema.org/Book",
+        "local_name": "Book"
+      },
+      {
+        "uri": "https://w3id.org/software-types#DesktopApplication",
+        "local_name": "DesktopApplication"
+      },
+      {
+        "uri": "http://schema.org/Review",
+        "local_name": "Review"
+      },
+      {
+        "uri": "http://schema.org/HowTo",
+        "local_name": "HowTo"
+      },
+      {
+        "uri": "http://schema.org/SpeakableSpecification",
+        "local_name": "SpeakableSpecification"
+      },
+      {
+        "uri": "http://schema.org/EntryPoint",
+        "local_name": "EntryPoint"
+      },
+      {
+        "uri": "http://schema.org/WebPage",
+        "local_name": "WebPage"
+      },
+      {
+        "uri": "http://schema.org/Language",
+        "local_name": "Language"
+      }
+    ],
+    "domain_specific": [
+      {
+        "uri": "https://w3id.org/nwo-research-fields#ResearchField",
+        "local_name": "ResearchField"
+      },
+      {
+        "uri": "https://w3id.org/research-technology-readiness-levels#TechnologyReadinessLevel",
+        "local_name": "TechnologyReadinessLevel"
+      },
+      {
+        "uri": "https://w3id.org/software-types#CommandLineApplication",
+        "local_name": "CommandLineApplication"
+      },
+      {
+        "uri": "https://w3id.org/software-types#ServerApplication",
+        "local_name": "ServerApplication"
+      },
+      {
+        "uri": "https://w3id.org/software-types#SoftwareLibrary",
+        "local_name": "SoftwareLibrary"
+      },
+      {
+        "uri": "https://w3id.org/software-types#WebApplication",
+        "local_name": "WebApplication"
+      },
+      {
+        "uri": "https://w3id.org/software-types#SoftwareImage",
+        "local_name": "SoftwareImage"
+      },
+      {
+        "uri": "https://w3id.org/software-types#DesktopApplication",
+        "local_name": "DesktopApplication"
+      },
+      {
+        "uri": "http://xmlns.com/foaf/0.1/Person",
+        "local_name": "Person"
+      }
+    ]
+  },
+  "predicates": {
+    "all": [
+      {
+        "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "local_name": "type"
+      },
+      {
+        "uri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+        "local_name": "subClassOf"
+      },
+      {
+        "uri": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+        "local_name": "subPropertyOf"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#equivalentClass",
+        "local_name": "equivalentClass"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#equivalentProperty",
+        "local_name": "equivalentProperty"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#inverseOf",
+        "local_name": "inverseOf"
+      },
+      {
+        "uri": "http://purl.org/dc/terms/created",
+        "local_name": "created"
+      },
+      {
+        "uri": "http://purl.org/dc/terms/modified",
+        "local_name": "modified"
+      },
+      {
+        "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+        "local_name": "label"
+      },
+      {
+        "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+        "local_name": "first"
+      },
+      {
+        "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+        "local_name": "rest"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#unionOf",
+        "local_name": "unionOf"
+      },
+      {
+        "uri": "http://www.w3.org/2000/01/rdf-schema#domain",
+        "local_name": "domain"
+      },
+      {
+        "uri": "http://www.w3.org/2000/01/rdf-schema#range",
+        "local_name": "range"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#imports",
+        "local_name": "imports"
+      },
+      {
+        "uri": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+        "local_name": "isDefinedBy"
+      },
+      {
+        "uri": "http://www.w3.org/2000/01/rdf-schema#comment",
+        "local_name": "comment"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#versionInfo",
+        "local_name": "versionInfo"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#priorVersion",
+        "local_name": "priorVersion"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#disjointWith",
+        "local_name": "disjointWith"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#onProperty",
+        "local_name": "onProperty"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#allValuesFrom",
+        "local_name": "allValuesFrom"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#minCardinality",
+        "local_name": "minCardinality"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#maxCardinality",
+        "local_name": "maxCardinality"
+      },
+      {
+        "uri": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "local_name": "seeAlso"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/datasetContactAffiliation",
+        "local_name": "datasetContactAffiliation"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/datasetContactName",
+        "local_name": "datasetContactName"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/producerLogoURL",
+        "local_name": "producerLogoURL"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/geospatial#city",
+        "local_name": "city"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/distributorLogoURL",
+        "local_name": "distributorLogoURL"
+      },
+      {
+        "uri": "http://schema.org/additionalType",
+        "local_name": "additionalType"
+      },
+      {
+        "uri": "http://www.openarchives.org/ore/terms/describes",
+        "local_name": "describes"
+      },
+      {
+        "uri": "https://dataverse.org/schema/core#generatedBy",
+        "local_name": "generatedBy"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#sameAs",
+        "local_name": "sameAs"
+      },
+      {
+        "uri": "http://purl.org/dc/terms/dateSubmitted",
+        "local_name": "dateSubmitted"
+      },
+      {
+        "uri": "http://schema.org/creativeWorkStatus",
+        "local_name": "creativeWorkStatus"
+      },
+      {
+        "uri": "http://schema.org/fileFormat",
+        "local_name": "fileFormat"
+      },
+      {
+        "uri": "https://schema.org/distribution",
+        "local_name": "distribution"
+      },
+      {
+        "uri": "https://schema.org/sponsor",
+        "local_name": "sponsor"
+      },
+      {
+        "uri": "https://schema.org/temporalCoverage",
+        "local_name": "temporalCoverage"
+      },
+      {
+        "uri": "http://rdf-vocabulary.ddialliance.org/discovery#kindOfData",
+        "local_name": "kindOfData"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/distributor",
+        "local_name": "distributor"
+      },
+      {
+        "uri": "https://dataverse.org/schema/core#currentIngestedName",
+        "local_name": "currentIngestedName"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/dansMetadata#dansRightsHolder",
+        "local_name": "dansRightsHolder"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/enrichments#cbsLinkage",
+        "local_name": "cbsLinkage"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/geospatial#geographicCoverage",
+        "local_name": "geographicCoverage"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/provenance#workflow",
+        "local_name": "workflow"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/questionInformation#questionSchemeName",
+        "local_name": "questionSchemeName"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/socialscience#samplingProcedure",
+        "local_name": "samplingProcedure"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/variableInformation#odisseiVariable",
+        "local_name": "odisseiVariable"
+      },
+      {
+        "uri": "https://www.w3.org/TR/prov-o/#wasDerivedFrom",
+        "local_name": "wasDerivedFrom"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/datasetContact",
+        "local_name": "datasetContact"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/dateOfCollection",
+        "local_name": "dateOfCollection"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/depositor",
+        "local_name": "depositor"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/distributionDate",
+        "local_name": "distributionDate"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/dsDescription",
+        "local_name": "dsDescription"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/keyword",
+        "local_name": "keyword"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/notesText",
+        "local_name": "notesText"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/otherId",
+        "local_name": "otherId"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/producer",
+        "local_name": "producer"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/productionDate",
+        "local_name": "productionDate"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/productionPlace",
+        "local_name": "productionPlace"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/series",
+        "local_name": "series"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/subtitle",
+        "local_name": "subtitle"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/topicClassification",
+        "local_name": "topicClassification"
+      },
+      {
+        "uri": "https://dataverse.org/schema/core#UNF",
+        "local_name": "UNF"
+      },
+      {
+        "uri": "https://dataverse.org/schema/core#checksum",
+        "local_name": "checksum"
+      },
+      {
+        "uri": "https://dataverse.org/schema/core#datasetVersionId",
+        "local_name": "datasetVersionId"
+      },
+      {
+        "uri": "https://dataverse.org/schema/core#fileTermsOfAccess",
+        "local_name": "fileTermsOfAccess"
+      },
+      {
+        "uri": "https://dataverse.org/schema/core#filesize",
+        "local_name": "filesize"
+      },
+      {
+        "uri": "https://dataverse.org/schema/core#restricted",
+        "local_name": "restricted"
+      },
+      {
+        "uri": "https://dataverse.org/schema/core#rootDataFileId",
+        "local_name": "rootDataFileId"
+      },
+      {
+        "uri": "https://dataverse.org/schema/core#storageIdentifier",
+        "local_name": "storageIdentifier"
+      },
+      {
+        "uri": "https://dataverse.org/schema/core#termsOfUse",
+        "local_name": "termsOfUse"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/dansMetadata#dansAudience",
+        "local_name": "dansAudience"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/dansMetadata#dansCessdaClassification",
+        "local_name": "dansCessdaClassification"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/dansMetadata#dansCollection",
+        "local_name": "dansCollection"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/dansMetadata#dansElsstClassification",
+        "local_name": "dansElsstClassification"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/dansMetadata#dansMetadataLanguage",
+        "local_name": "dansMetadataLanguage"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/dansMetadata#dansPersonalDataPresent",
+        "local_name": "dansPersonalDataPresent"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/dansMetadata#dansRelation",
+        "local_name": "dansRelation"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/dansMetadata#dansTemporalCoverage",
+        "local_name": "dansTemporalCoverage"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/enrichments#cbsLinkageDetails",
+        "local_name": "cbsLinkageDetails"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/enrichments#term",
+        "local_name": "term"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/questionInformation#question",
+        "local_name": "question"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/questionInformation#questionSchemeDescription",
+        "local_name": "questionSchemeDescription"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/socialscience#actionsToMinimizeLoss",
+        "local_name": "actionsToMinimizeLoss"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/socialscience#collectionMode",
+        "local_name": "collectionMode"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/socialscience#dataCollectionSituation",
+        "local_name": "dataCollectionSituation"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/socialscience#frequencyOfDataCollection",
+        "local_name": "frequencyOfDataCollection"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/socialscience#responseRate",
+        "local_name": "responseRate"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/socialscience#universe",
+        "local_name": "universe"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/socialscience#weighting",
+        "local_name": "weighting"
+      },
+      {
+        "uri": "https://www.w3.org/TR/prov-o/#wasGeneratedBy",
+        "local_name": "wasGeneratedBy"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/accessToSources",
+        "local_name": "accessToSources"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/originOfSources",
+        "local_name": "originOfSources"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/relatedMaterial",
+        "local_name": "relatedMaterial"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/geospatial#geographicBoundingBox",
+        "local_name": "geographicBoundingBox"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/socialscience#socialScienceNotes",
+        "local_name": "socialScienceNotes"
+      },
+      {
+        "uri": "http://purl.org/dc/terms/bibliographicCitation",
+        "local_name": "bibliographicCitation"
+      }
+    ],
+    "domain_specific": [
+      {
+        "uri": "https://portal.odissei.nl/schema/geospatial#city",
+        "local_name": "city"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/geospatial#geographicCoverage",
+        "local_name": "geographicCoverage"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/geospatial#geographicBoundingBox",
+        "local_name": "geographicBoundingBox"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/dansMetadata#dansRightsHolder",
+        "local_name": "dansRightsHolder"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/dansMetadata#dansAudience",
+        "local_name": "dansAudience"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/dansMetadata#dansCessdaClassification",
+        "local_name": "dansCessdaClassification"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/dansMetadata#dansCollection",
+        "local_name": "dansCollection"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/dansMetadata#dansElsstClassification",
+        "local_name": "dansElsstClassification"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/dansMetadata#dansMetadataLanguage",
+        "local_name": "dansMetadataLanguage"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/dansMetadata#dansPersonalDataPresent",
+        "local_name": "dansPersonalDataPresent"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/dansMetadata#dansRelation",
+        "local_name": "dansRelation"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/dansMetadata#dansTemporalCoverage",
+        "local_name": "dansTemporalCoverage"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/enrichments#cbsLinkage",
+        "local_name": "cbsLinkage"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/enrichments#cbsLinkageDetails",
+        "local_name": "cbsLinkageDetails"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/enrichments#term",
+        "local_name": "term"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/provenance#workflow",
+        "local_name": "workflow"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/questionInformation#questionSchemeName",
+        "local_name": "questionSchemeName"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/questionInformation#question",
+        "local_name": "question"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/questionInformation#questionSchemeDescription",
+        "local_name": "questionSchemeDescription"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/socialscience#samplingProcedure",
+        "local_name": "samplingProcedure"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/socialscience#actionsToMinimizeLoss",
+        "local_name": "actionsToMinimizeLoss"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/socialscience#collectionMode",
+        "local_name": "collectionMode"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/socialscience#dataCollectionSituation",
+        "local_name": "dataCollectionSituation"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/socialscience#frequencyOfDataCollection",
+        "local_name": "frequencyOfDataCollection"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/socialscience#responseRate",
+        "local_name": "responseRate"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/socialscience#universe",
+        "local_name": "universe"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/socialscience#weighting",
+        "local_name": "weighting"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/socialscience#socialScienceNotes",
+        "local_name": "socialScienceNotes"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/variableInformation#odisseiVariable",
+        "local_name": "odisseiVariable"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/datasetContactAffiliation",
+        "local_name": "datasetContactAffiliation"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/datasetContactName",
+        "local_name": "datasetContactName"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/producerLogoURL",
+        "local_name": "producerLogoURL"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/distributorLogoURL",
+        "local_name": "distributorLogoURL"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/distributor",
+        "local_name": "distributor"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/datasetContact",
+        "local_name": "datasetContact"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/dateOfCollection",
+        "local_name": "dateOfCollection"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/depositor",
+        "local_name": "depositor"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/distributionDate",
+        "local_name": "distributionDate"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/dsDescription",
+        "local_name": "dsDescription"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/keyword",
+        "local_name": "keyword"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/notesText",
+        "local_name": "notesText"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/otherId",
+        "local_name": "otherId"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/producer",
+        "local_name": "producer"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/productionDate",
+        "local_name": "productionDate"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/productionPlace",
+        "local_name": "productionPlace"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/series",
+        "local_name": "series"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/subtitle",
+        "local_name": "subtitle"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/topicClassification",
+        "local_name": "topicClassification"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/accessToSources",
+        "local_name": "accessToSources"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/originOfSources",
+        "local_name": "originOfSources"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/relatedMaterial",
+        "local_name": "relatedMaterial"
+      },
+      {
+        "uri": "https://dataverse.org/schema/core#generatedBy",
+        "local_name": "generatedBy"
+      },
+      {
+        "uri": "https://dataverse.org/schema/core#currentIngestedName",
+        "local_name": "currentIngestedName"
+      },
+      {
+        "uri": "https://dataverse.org/schema/core#UNF",
+        "local_name": "UNF"
+      },
+      {
+        "uri": "https://dataverse.org/schema/core#checksum",
+        "local_name": "checksum"
+      },
+      {
+        "uri": "https://dataverse.org/schema/core#datasetVersionId",
+        "local_name": "datasetVersionId"
+      },
+      {
+        "uri": "https://dataverse.org/schema/core#fileTermsOfAccess",
+        "local_name": "fileTermsOfAccess"
+      },
+      {
+        "uri": "https://dataverse.org/schema/core#filesize",
+        "local_name": "filesize"
+      },
+      {
+        "uri": "https://dataverse.org/schema/core#restricted",
+        "local_name": "restricted"
+      },
+      {
+        "uri": "https://dataverse.org/schema/core#rootDataFileId",
+        "local_name": "rootDataFileId"
+      },
+      {
+        "uri": "https://dataverse.org/schema/core#storageIdentifier",
+        "local_name": "storageIdentifier"
+      },
+      {
+        "uri": "https://dataverse.org/schema/core#termsOfUse",
+        "local_name": "termsOfUse"
+      },
+      {
+        "uri": "http://rdf-vocabulary.ddialliance.org/discovery#kindOfData",
+        "local_name": "kindOfData"
+      },
+      {
+        "uri": "https://www.w3.org/TR/prov-o/#wasDerivedFrom",
+        "local_name": "wasDerivedFrom"
+      },
+      {
+        "uri": "https://www.w3.org/TR/prov-o/#wasGeneratedBy",
+        "local_name": "wasGeneratedBy"
+      }
+    ]
+  },
+  "classes_by_namespace": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#": [
+      {
+        "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "local_name": "Property"
+      },
+      {
+        "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "local_name": "List"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#": [
+      {
+        "uri": "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "local_name": "Resource"
+      },
+      {
+        "uri": "http://www.w3.org/2000/01/rdf-schema#Class",
+        "local_name": "Class"
+      },
+      {
+        "uri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+        "local_name": "Datatype"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#": [
+      {
+        "uri": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+        "local_name": "DatatypeProperty"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#Class",
+        "local_name": "Class"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#Ontology",
+        "local_name": "Ontology"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#AnnotationProperty",
+        "local_name": "AnnotationProperty"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#ObjectProperty",
+        "local_name": "ObjectProperty"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#SymmetricProperty",
+        "local_name": "SymmetricProperty"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#DataProperty",
+        "local_name": "DataProperty"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#NamedIndividual",
+        "local_name": "NamedIndividual"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#FunctionalProperty",
+        "local_name": "FunctionalProperty"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#Thing",
+        "local_name": "Thing"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#Restriction",
+        "local_name": "Restriction"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#TransitiveProperty",
+        "local_name": "TransitiveProperty"
+      }
+    ],
+    "http://schema.org/": [
+      {
+        "uri": "http://schema.org/SoftwareApplication",
+        "local_name": "SoftwareApplication"
+      },
+      {
+        "uri": "http://schema.org/Dataset",
+        "local_name": "Dataset"
+      },
+      {
+        "uri": "http://schema.org/ScholarlyArticle",
+        "local_name": "ScholarlyArticle"
+      },
+      {
+        "uri": "http://schema.org/TechArticle",
+        "local_name": "TechArticle"
+      },
+      {
+        "uri": "http://schema.org/SoftwareSourceCode",
+        "local_name": "SoftwareSourceCode"
+      },
+      {
+        "uri": "http://schema.org/WebApplication",
+        "local_name": "WebApplication"
+      },
+      {
+        "uri": "http://schema.org/CreativeWork",
+        "local_name": "CreativeWork"
+      },
+      {
+        "uri": "http://schema.org/WebSite",
+        "local_name": "WebSite"
+      },
+      {
+        "uri": "http://schema.org/Organization",
+        "local_name": "Organization"
+      },
+      {
+        "uri": "http://schema.org/DataCatalog",
+        "local_name": "DataCatalog"
+      },
+      {
+        "uri": "http://schema.org/Person",
+        "local_name": "Person"
+      },
+      {
+        "uri": "http://schema.org/Grant",
+        "local_name": "Grant"
+      },
+      {
+        "uri": "http://schema.org/Audience",
+        "local_name": "Audience"
+      },
+      {
+        "uri": "http://schema.org/TextDigitalDocument",
+        "local_name": "TextDigitalDocument"
+      },
+      {
+        "uri": "http://schema.org/Place",
+        "local_name": "Place"
+      },
+      {
+        "uri": "http://schema.org/DigitalDocument",
+        "local_name": "DigitalDocument"
+      },
+      {
+        "uri": "http://schema.org/DataDownload",
+        "local_name": "DataDownload"
+      },
+      {
+        "uri": "http://schema.org/WebAPI",
+        "local_name": "WebAPI"
+      },
+      {
+        "uri": "http://schema.org/PostalAddress",
+        "local_name": "PostalAddress"
+      },
+      {
+        "uri": "http://schema.org/SpreadsheetDigitalDocument",
+        "local_name": "SpreadsheetDigitalDocument"
+      },
+      {
+        "uri": "http://schema.org/PublicationIssue",
+        "local_name": "PublicationIssue"
+      },
+      {
+        "uri": "http://schema.org/AudioObject",
+        "local_name": "AudioObject"
+      },
+      {
+        "uri": "http://schema.org/WebService",
+        "local_name": "WebService"
+      },
+      {
+        "uri": "http://schema.org/ComputerLanguage",
+        "local_name": "ComputerLanguage"
+      },
+      {
+        "uri": "http://schema.org/PublicationVolume",
+        "local_name": "PublicationVolume"
+      },
+      {
+        "uri": "http://schema.org/Book",
+        "local_name": "Book"
+      },
+      {
+        "uri": "http://schema.org/Review",
+        "local_name": "Review"
+      },
+      {
+        "uri": "http://schema.org/HowTo",
+        "local_name": "HowTo"
+      },
+      {
+        "uri": "http://schema.org/SpeakableSpecification",
+        "local_name": "SpeakableSpecification"
+      },
+      {
+        "uri": "http://schema.org/EntryPoint",
+        "local_name": "EntryPoint"
+      },
+      {
+        "uri": "http://schema.org/WebPage",
+        "local_name": "WebPage"
+      },
+      {
+        "uri": "http://schema.org/Language",
+        "local_name": "Language"
+      }
+    ],
+    "http://www.openarchives.org/ore/terms/": [
+      {
+        "uri": "http://www.openarchives.org/ore/terms/ResourceMap",
+        "local_name": "ResourceMap"
+      },
+      {
+        "uri": "http://www.openarchives.org/ore/terms/Aggregation",
+        "local_name": "Aggregation"
+      },
+      {
+        "uri": "http://www.openarchives.org/ore/terms/AggregatedResource",
+        "local_name": "AggregatedResource"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#": [
+      {
+        "uri": "http://www.w3.org/2004/02/skos/core#Concept",
+        "local_name": "Concept"
+      },
+      {
+        "uri": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "local_name": "ConceptScheme"
+      },
+      {
+        "uri": "http://www.w3.org/2004/02/skos/core#OrderedCollection",
+        "local_name": "OrderedCollection"
+      }
+    ],
+    "https://w3id.org/nwo-research-fields#": [
+      {
+        "uri": "https://w3id.org/nwo-research-fields#ResearchField",
+        "local_name": "ResearchField"
+      }
+    ],
+    "https://schema.org/": [
+      {
+        "uri": "https://schema.org/SoftwareSourceCode",
+        "local_name": "SoftwareSourceCode"
+      },
+      {
+        "uri": "https://schema.org/ResearchProject",
+        "local_name": "ResearchProject"
+      }
+    ],
+    "http://purl.org/dc/dcmitype/": [
+      {
+        "uri": "http://purl.org/dc/dcmitype/Software",
+        "local_name": "Software"
+      },
+      {
+        "uri": "http://purl.org/dc/dcmitype/Dataset",
+        "local_name": "Dataset"
+      }
+    ],
+    "http://purl.org/ontology/bibo/": [
+      {
+        "uri": "http://purl.org/ontology/bibo/Article",
+        "local_name": "Article"
+      },
+      {
+        "uri": "http://purl.org/ontology/bibo/AcademicArticle",
+        "local_name": "AcademicArticle"
+      },
+      {
+        "uri": "http://purl.org/ontology/bibo/ThesisDegree",
+        "local_name": "ThesisDegree"
+      },
+      {
+        "uri": "http://purl.org/ontology/bibo/DocumentStatus",
+        "local_name": "DocumentStatus"
+      }
+    ],
+    "https://w3id.org/research-technology-readiness-levels#": [
+      {
+        "uri": "https://w3id.org/research-technology-readiness-levels#TechnologyReadinessLevel",
+        "local_name": "TechnologyReadinessLevel"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/": [
+      {
+        "uri": "http://xmlns.com/foaf/0.1/Person",
+        "local_name": "Person"
+      }
+    ],
+    "https://w3id.org/software-types#": [
+      {
+        "uri": "https://w3id.org/software-types#CommandLineApplication",
+        "local_name": "CommandLineApplication"
+      },
+      {
+        "uri": "https://w3id.org/software-types#ServerApplication",
+        "local_name": "ServerApplication"
+      },
+      {
+        "uri": "https://w3id.org/software-types#SoftwareLibrary",
+        "local_name": "SoftwareLibrary"
+      },
+      {
+        "uri": "https://w3id.org/software-types#WebApplication",
+        "local_name": "WebApplication"
+      },
+      {
+        "uri": "https://w3id.org/software-types#SoftwareImage",
+        "local_name": "SoftwareImage"
+      },
+      {
+        "uri": "https://w3id.org/software-types#DesktopApplication",
+        "local_name": "DesktopApplication"
+      }
+    ]
+  },
+  "predicates_by_namespace": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#": [
+      {
+        "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "local_name": "type"
+      },
+      {
+        "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+        "local_name": "first"
+      },
+      {
+        "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+        "local_name": "rest"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#": [
+      {
+        "uri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+        "local_name": "subClassOf"
+      },
+      {
+        "uri": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+        "local_name": "subPropertyOf"
+      },
+      {
+        "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+        "local_name": "label"
+      },
+      {
+        "uri": "http://www.w3.org/2000/01/rdf-schema#domain",
+        "local_name": "domain"
+      },
+      {
+        "uri": "http://www.w3.org/2000/01/rdf-schema#range",
+        "local_name": "range"
+      },
+      {
+        "uri": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+        "local_name": "isDefinedBy"
+      },
+      {
+        "uri": "http://www.w3.org/2000/01/rdf-schema#comment",
+        "local_name": "comment"
+      },
+      {
+        "uri": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "local_name": "seeAlso"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#": [
+      {
+        "uri": "http://www.w3.org/2002/07/owl#equivalentClass",
+        "local_name": "equivalentClass"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#equivalentProperty",
+        "local_name": "equivalentProperty"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#inverseOf",
+        "local_name": "inverseOf"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#unionOf",
+        "local_name": "unionOf"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#imports",
+        "local_name": "imports"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#versionInfo",
+        "local_name": "versionInfo"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#priorVersion",
+        "local_name": "priorVersion"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#disjointWith",
+        "local_name": "disjointWith"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#onProperty",
+        "local_name": "onProperty"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#allValuesFrom",
+        "local_name": "allValuesFrom"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#minCardinality",
+        "local_name": "minCardinality"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#maxCardinality",
+        "local_name": "maxCardinality"
+      },
+      {
+        "uri": "http://www.w3.org/2002/07/owl#sameAs",
+        "local_name": "sameAs"
+      }
+    ],
+    "http://purl.org/dc/terms/": [
+      {
+        "uri": "http://purl.org/dc/terms/created",
+        "local_name": "created"
+      },
+      {
+        "uri": "http://purl.org/dc/terms/modified",
+        "local_name": "modified"
+      },
+      {
+        "uri": "http://purl.org/dc/terms/dateSubmitted",
+        "local_name": "dateSubmitted"
+      },
+      {
+        "uri": "http://purl.org/dc/terms/bibliographicCitation",
+        "local_name": "bibliographicCitation"
+      }
+    ],
+    "https://dataverse.org/schema/citation/": [
+      {
+        "uri": "https://dataverse.org/schema/citation/datasetContactAffiliation",
+        "local_name": "datasetContactAffiliation"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/datasetContactName",
+        "local_name": "datasetContactName"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/producerLogoURL",
+        "local_name": "producerLogoURL"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/distributorLogoURL",
+        "local_name": "distributorLogoURL"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/distributor",
+        "local_name": "distributor"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/datasetContact",
+        "local_name": "datasetContact"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/dateOfCollection",
+        "local_name": "dateOfCollection"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/depositor",
+        "local_name": "depositor"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/distributionDate",
+        "local_name": "distributionDate"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/dsDescription",
+        "local_name": "dsDescription"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/keyword",
+        "local_name": "keyword"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/notesText",
+        "local_name": "notesText"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/otherId",
+        "local_name": "otherId"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/producer",
+        "local_name": "producer"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/productionDate",
+        "local_name": "productionDate"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/productionPlace",
+        "local_name": "productionPlace"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/series",
+        "local_name": "series"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/subtitle",
+        "local_name": "subtitle"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/topicClassification",
+        "local_name": "topicClassification"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/accessToSources",
+        "local_name": "accessToSources"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/originOfSources",
+        "local_name": "originOfSources"
+      },
+      {
+        "uri": "https://dataverse.org/schema/citation/relatedMaterial",
+        "local_name": "relatedMaterial"
+      }
+    ],
+    "https://portal.odissei.nl/schema/geospatial#": [
+      {
+        "uri": "https://portal.odissei.nl/schema/geospatial#city",
+        "local_name": "city"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/geospatial#geographicCoverage",
+        "local_name": "geographicCoverage"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/geospatial#geographicBoundingBox",
+        "local_name": "geographicBoundingBox"
+      }
+    ],
+    "http://schema.org/": [
+      {
+        "uri": "http://schema.org/additionalType",
+        "local_name": "additionalType"
+      },
+      {
+        "uri": "http://schema.org/creativeWorkStatus",
+        "local_name": "creativeWorkStatus"
+      },
+      {
+        "uri": "http://schema.org/fileFormat",
+        "local_name": "fileFormat"
+      }
+    ],
+    "http://www.openarchives.org/ore/terms/": [
+      {
+        "uri": "http://www.openarchives.org/ore/terms/describes",
+        "local_name": "describes"
+      }
+    ],
+    "https://dataverse.org/schema/core#": [
+      {
+        "uri": "https://dataverse.org/schema/core#generatedBy",
+        "local_name": "generatedBy"
+      },
+      {
+        "uri": "https://dataverse.org/schema/core#currentIngestedName",
+        "local_name": "currentIngestedName"
+      },
+      {
+        "uri": "https://dataverse.org/schema/core#UNF",
+        "local_name": "UNF"
+      },
+      {
+        "uri": "https://dataverse.org/schema/core#checksum",
+        "local_name": "checksum"
+      },
+      {
+        "uri": "https://dataverse.org/schema/core#datasetVersionId",
+        "local_name": "datasetVersionId"
+      },
+      {
+        "uri": "https://dataverse.org/schema/core#fileTermsOfAccess",
+        "local_name": "fileTermsOfAccess"
+      },
+      {
+        "uri": "https://dataverse.org/schema/core#filesize",
+        "local_name": "filesize"
+      },
+      {
+        "uri": "https://dataverse.org/schema/core#restricted",
+        "local_name": "restricted"
+      },
+      {
+        "uri": "https://dataverse.org/schema/core#rootDataFileId",
+        "local_name": "rootDataFileId"
+      },
+      {
+        "uri": "https://dataverse.org/schema/core#storageIdentifier",
+        "local_name": "storageIdentifier"
+      },
+      {
+        "uri": "https://dataverse.org/schema/core#termsOfUse",
+        "local_name": "termsOfUse"
+      }
+    ],
+    "https://schema.org/": [
+      {
+        "uri": "https://schema.org/distribution",
+        "local_name": "distribution"
+      },
+      {
+        "uri": "https://schema.org/sponsor",
+        "local_name": "sponsor"
+      },
+      {
+        "uri": "https://schema.org/temporalCoverage",
+        "local_name": "temporalCoverage"
+      }
+    ],
+    "http://rdf-vocabulary.ddialliance.org/discovery#": [
+      {
+        "uri": "http://rdf-vocabulary.ddialliance.org/discovery#kindOfData",
+        "local_name": "kindOfData"
+      }
+    ],
+    "https://portal.odissei.nl/schema/dansMetadata#": [
+      {
+        "uri": "https://portal.odissei.nl/schema/dansMetadata#dansRightsHolder",
+        "local_name": "dansRightsHolder"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/dansMetadata#dansAudience",
+        "local_name": "dansAudience"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/dansMetadata#dansCessdaClassification",
+        "local_name": "dansCessdaClassification"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/dansMetadata#dansCollection",
+        "local_name": "dansCollection"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/dansMetadata#dansElsstClassification",
+        "local_name": "dansElsstClassification"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/dansMetadata#dansMetadataLanguage",
+        "local_name": "dansMetadataLanguage"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/dansMetadata#dansPersonalDataPresent",
+        "local_name": "dansPersonalDataPresent"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/dansMetadata#dansRelation",
+        "local_name": "dansRelation"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/dansMetadata#dansTemporalCoverage",
+        "local_name": "dansTemporalCoverage"
+      }
+    ],
+    "https://portal.odissei.nl/schema/enrichments#": [
+      {
+        "uri": "https://portal.odissei.nl/schema/enrichments#cbsLinkage",
+        "local_name": "cbsLinkage"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/enrichments#cbsLinkageDetails",
+        "local_name": "cbsLinkageDetails"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/enrichments#term",
+        "local_name": "term"
+      }
+    ],
+    "https://portal.odissei.nl/schema/provenance#": [
+      {
+        "uri": "https://portal.odissei.nl/schema/provenance#workflow",
+        "local_name": "workflow"
+      }
+    ],
+    "https://portal.odissei.nl/schema/questionInformation#": [
+      {
+        "uri": "https://portal.odissei.nl/schema/questionInformation#questionSchemeName",
+        "local_name": "questionSchemeName"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/questionInformation#question",
+        "local_name": "question"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/questionInformation#questionSchemeDescription",
+        "local_name": "questionSchemeDescription"
+      }
+    ],
+    "https://portal.odissei.nl/schema/socialscience#": [
+      {
+        "uri": "https://portal.odissei.nl/schema/socialscience#samplingProcedure",
+        "local_name": "samplingProcedure"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/socialscience#actionsToMinimizeLoss",
+        "local_name": "actionsToMinimizeLoss"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/socialscience#collectionMode",
+        "local_name": "collectionMode"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/socialscience#dataCollectionSituation",
+        "local_name": "dataCollectionSituation"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/socialscience#frequencyOfDataCollection",
+        "local_name": "frequencyOfDataCollection"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/socialscience#responseRate",
+        "local_name": "responseRate"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/socialscience#universe",
+        "local_name": "universe"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/socialscience#weighting",
+        "local_name": "weighting"
+      },
+      {
+        "uri": "https://portal.odissei.nl/schema/socialscience#socialScienceNotes",
+        "local_name": "socialScienceNotes"
+      }
+    ],
+    "https://portal.odissei.nl/schema/variableInformation#": [
+      {
+        "uri": "https://portal.odissei.nl/schema/variableInformation#odisseiVariable",
+        "local_name": "odisseiVariable"
+      }
+    ],
+    "https://www.w3.org/TR/prov-o/#": [
+      {
+        "uri": "https://www.w3.org/TR/prov-o/#wasDerivedFrom",
+        "local_name": "wasDerivedFrom"
+      },
+      {
+        "uri": "https://www.w3.org/TR/prov-o/#wasGeneratedBy",
+        "local_name": "wasGeneratedBy"
+      }
+    ]
+  }
+}
